@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Pribadi</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: #0f172a;
+        color: #e2e8f0;
+        line-height: 1.6;
+      }
+
+      /* HEADER */
+      header {
+        background: linear-gradient(135deg, #6366f1, #9333ea);
+        text-align: center;
+        padding: 80px 20px 60px;
+        position: relative;
+      }
+
+      .profile-pic {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 6px solid white;
+        margin-bottom: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      header h1 {
+        font-size: 2.7rem;
+        color: white;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        color: #e0e7ff;
+      }
+
+      /* NAVBAR */
+      nav {
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding: 15px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #cbd5f5;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #a78bfa;
+        transform: translateY(-2px);
+      }
+
+      section {
+        padding: 70px 20px;
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+        color: #a78bfa;
+        text-align: center;
+      }
+
+      .card {
+        background: #1e293b;
+        padding: 35px;
+        border-radius: 18px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        margin-bottom: 30px;
+        transition: all 0.4s ease;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .card:hover {
+        transform: translateY(-8px) scale(1.01);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 25px;
+      }
+
+      .info-box {
+        background: linear-gradient(135deg, #1e293b, #334155);
+        padding: 25px;
+        border-radius: 15px;
+        transition: 0.3s;
+        border-left: 5px solid #8b5cf6;
+      }
+
+      .info-box:hover {
+        transform: translateY(-5px);
+        background: linear-gradient(135deg, #334155, #475569);
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .highlight {
+        color: #c4b5fd;
+        font-weight: 500;
+      }
+
+      .contact p {
+        margin: 10px 0;
+        font-size: 1.05rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px;
+        background: #020617;
+        color: #94a3b8;
+        margin-top: 40px;
+        font-size: 0.95rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="foto-profil.jpeg" alt="Foto Profil" class="profile-pic" />
+      <h1>AMANDHA FAZA NAFILA</h1>
+      <p>Mahasiswa Informatika | Portofolio Pribadi | Perjalanan hidupku</p>
+    </header>
+
+    <nav>
+      <a href="#nama">Profil</a>
+      <a href="#about">About Me</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#sertifikasi">Sertifikasi</a>
+      <a href="#pengalaman">Pengalaman</a>
+      <a href="#karya">Karya</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="nama">
+      <div class="card">
+        <h2>Profil Pribadi</h2>
+        <p><span class="highlight">Nama:</span> Amandha Faza Nafila</p>
+        <p><span class="highlight">Alamat:</span> Batang,Jawa Tengah</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          Saya adalah mahasiswa Informatika yang antusias dalam mempelajari
+          teknologi dan terus mengembangkan kemampuan diri, baik di bidang
+          akademik maupun organisasi. Saya aktif dalam kegiatan kampus yang
+          membentuk saya menjadi pribadi yang bertanggung jawab, komunikatif,
+          dan mampu bekerja dalam tim. Ketertarikan saya pada pemrograman dan
+          desain mendorong saya untuk terus belajar hal-hal baru, berinovasi,
+          dan menghasilkan karya kreatif di bidang teknologi. Bagi saya, proses
+          belajar adalah perjalanan yang tidak pernah berhenti untuk menjadi
+          versi terbaik dari diri sendiri.
+        </p>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="card">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            S1 Informatika - UIN K.H Abdurrahman Wahid Pekalongan(2025 -
+            Sekarang)
+          </li>
+          <li>
+            SMK - SMK NEGERI 1 BATANG - Teknik Jaringan Komputer dan
+            Telekomunikasi (2022 - 2024)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="card">
+        <h2>Skills</h2>
+        <div class="grid-2">
+          <div class="info-box">HTML,PHP,javascript,CSS</div>
+          <div class="info-box">Dasar Pemrograman (C /C++ / Python)</div>
+          <div class="info-box">Microsoft Office</div>
+          <div class="info-box">Manajemen Organisasi</div>
+          <div class="info-box">Public Speaking</div>
+          <div class="info-box">Desain Dokumen & Proposal</div>
+          <div class="info-box">Desain foto & Video</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sertifikasi">
+      <div class="card">
+        <h2>Sertifikasi</h2>
+        <ul>
+          <li>Sertifikat Basic Cyber Security DigitalentScholarship</li>
+          <li>Sertifikat Ready4AI&Security Training</li>
+          <li>Sertifikat Uji Kompetesi Keahlian TJKT</li>
+          <li>Sertifikat Belajar Dasar AI Dicoding</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="pengalaman">
+      <div class="card">
+        <h2>Pengalaman</h2>
+        <ul>
+          <li>Ketua Pramuka Garuda - 2022</li>
+          <li>Ketua Matematika Club - 2023</li>
+          <li>Sekretaris Himpunan Remaja - 2022-2023</li>
+          <li>Pengurus HMPS Informatika - 2026</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="karya">
+      <div class="card">
+        <h2>Karya & Project</h2>
+        <div class="grid-2">
+          <div class="info-box">
+            <h3>Website Portofolio</h3>
+            <p>
+              Membuat website portofolio pribadi menggunakan HTML dan CSS dengan
+              desain modern dan responsif.
+            </p>
+          </div>
+          <div class="info-box">
+            <h3>Website Toko Pakaian</h3>
+            <p>
+              Projek dengan website toko menggunakan html,css dasar dasar dalam
+              pembuatan website dalam waktu 1 bulan , dan disimpan dalam
+              xampp,github.
+            </p>
+          </div>
+          <div class="info-box">
+            <h3>Websitte Absensi jurnal</h3>
+            <p>
+              Website sederhana dengan menggunakan php,html,css memudahkan
+              mahasiswa untuk melakukan absensi.
+            </p>
+          </div>
+          <div class="info-box">
+            <h3>Dokumen Organisasi</h3>
+            <p>
+              Membuat proposal, TOR, notulensi, dan dokumen kegiatan kampus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card contact">
+        <h2>Contact</h2>
+        <p>Email: amandhanafilaa@gmail.com</p>
+        <p>Instagram: @mmandha_</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Portofolio Pribadi</p>
+    </footer>
+  </body>
+</html>
